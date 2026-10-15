@@ -3,7 +3,7 @@
 A small vertical-scrolling shooter written in C++ with raylib.
 
 Hobby project from 2023. Enemy planes and bombers fly down from the top of the screen; the
-player plane moves along the bottom and shoots them. The game ends when an enemy reaches the player.
+player plane moves along the bottom and shoots them; the kill count and elapsed time are shown top-left. The game ends when an enemy reaches the player.
 
 ## Requirements
 
@@ -25,6 +25,8 @@ player plane moves along the bottom and shoots them. The game ends when an enemy
 - Left / Right arrow: move
 - Space: shoot
 - On-screen `Pause` and `Quit` buttons (mouse)
+- Space or any letter/number key: start from the menu, resume from pause, return to the menu after game over
+- Esc: close the window
 
 ## Structure
 
