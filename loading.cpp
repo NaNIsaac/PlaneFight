@@ -8,7 +8,7 @@ std::vector<Sound> LoadedSounds;
 Texture2D DefaultTexture = { 0 };
 Sound DefaultSound = { 0 };
 
-void RoadResources() {
+void LoadResources() {
 
 	for (int i = 0; i < TextureToLoad.size(); i++) {
 		LoadedTextures.push_back(LoadTexture(TextureToLoad[i]));

@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 	SetWindowState(FLAG_VSYNC_HINT);
 	SetTargetFPS(60);
 
-	RoadResources();
+	LoadResources();
 	StartGame();
 	
 	SetMasterVolume(0.1f);

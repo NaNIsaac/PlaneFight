@@ -189,8 +189,6 @@ void UpdateGame() {
 }
 
 void UpdateScreen() {
-	pause_btn->CheckClicked();
-
 	kill_status->value = kill_count;
 	time_status->value = GetGameTime();
 

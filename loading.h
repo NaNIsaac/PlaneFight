@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-void RoadResources();
+void LoadResources();
 const Texture& GetTexture(int id);
 const Sound& GetSound(int id);
 void DeleteResources();
