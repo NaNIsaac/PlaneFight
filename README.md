@@ -1,5 +1,7 @@
 # PlaneFight
 
+Moved to games-2023/PlaneFight (https://github.com/NaNIsaac/games-2023/tree/main/PlaneFight). This repo is no longer maintained.
+
 A small vertical-scrolling shooter written in C++ with raylib.
 
 Hobby project from 2023. Enemy planes and bombers fly down from the top of the screen; the
