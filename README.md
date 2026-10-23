@@ -35,3 +35,22 @@ player plane moves along the bottom and shoots them; the kill count and elapsed 
 - `main.cpp` - window setup and main loop
 - `game.cpp` - player, bullets, enemies, collisions
 - `sprite.cpp`, `screen.cpp`, `loading.cpp` - sprites, UI, resource loading
+
+## Build from the command line
+
+Rebuilt on 2026-10-23 without source changes, using MSBuild from the Visual Studio 2022 Build Tools
+(MSVC 14.44) with the toolset overridden to v143; only C4244/C4018 conversion warnings were reported:
+
+```
+MSBuild PlaneFight.sln -p:Configuration=Debug -p:Platform=x86 -p:PlatformToolset=v143
+copy lib\raylib.dll Debug\
+Debug\PlaneFight.exe
+```
+
+Start the executable from the repository root so that `asset/` is found. The window is 960x540.
+
+## Origin
+
+This repository's history was imported into [games-2023](https://github.com/NaNIsaac/games-2023) as
+`PlaneFight/` with `git subtree` (games-2023 commit `b2340dc`, from commit `cd604ce` here). Apart from
+line endings, the files there are identical to this repository's.
