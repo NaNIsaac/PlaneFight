@@ -1,7 +1,5 @@
 # PlaneFight
 
-Moved to games-2023/PlaneFight (https://github.com/NaNIsaac/games-2023/tree/main/PlaneFight). This repo is no longer maintained.
-
 A small vertical-scrolling shooter written in C++ with raylib.
 
 Hobby project from 2023. Enemy planes and bombers fly down from the top of the screen; the
@@ -51,6 +49,21 @@ Start the executable from the repository root so that `asset/` is found. The win
 
 ## Origin
 
-This repository's history was imported into [games-2023](https://github.com/NaNIsaac/games-2023) as
-`PlaneFight/` with `git subtree` (games-2023 commit `b2340dc`, from commit `cd604ce` here). Apart from
-line endings, the files there are identical to this repository's.
+This repository is the original. Its history was also imported into
+[games-2023](https://github.com/NaNIsaac/games-2023) as `PlaneFight/` with `git subtree` (games-2023 commit
+`b2340dc`, from commit `cd604ce` here). Apart from line endings, the files there are identical to this
+repository's. Every commit was made by Isaac Yong.
+
+## License and third-party material
+
+The game source (`*.cpp`, `*.h` in the repository root, and the project files) is under the
+[MIT License](LICENSE).
+
+- **raylib 4.2** - zlib/libpng license, Copyright (c) 2013-2022 Ramon Santamaria. The headers `include/raylib.h`,
+  `raymath.h` and `rlgl.h` carry its notice unchanged. `lib/raylib.dll`, `raylib.lib` and `raylibdll.lib` are
+  raylib builds.
+- **Logging** - `include/logger.h` and `lib/logger.lib` are a small logging class used by the game. Their origin
+  is not recorded in this repository.
+- **`asset/`** - five PNG sprites and one WAV sound. Their origin and license are not recorded in this
+  repository (the metadata of `enemy2.png` names Inkscape as the tool). Until that is documented here, the MIT
+  License does not extend to the files in `asset/`.
