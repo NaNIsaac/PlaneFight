@@ -7,17 +7,14 @@ player plane moves along the bottom and shoots them; the kill count and elapsed 
 
 ## Requirements
 
-- Windows, Visual Studio 2019 or later with "Desktop development with C++" (toolset v142;
-  newer Visual Studio versions offer to retarget)
+- Windows, Visual Studio 2022 with "Desktop development with C++" (toolset v143)
 - raylib 4.2 and a small logging library, bundled as 32-bit headers and libraries in
   `include/` and `lib/`
 
 ## Run
 
 1. Open `PlaneFight.sln`.
-2. Select the `Debug` / `x86` configuration and build.
-3. Copy `lib\raylib.dll` next to the built `PlaneFight.exe` (in `Debug\`).
-4. Run (F5). Sprites and sounds are loaded from `asset/`, so the working directory must be the
+2. Run (F5). The build copies `lib\raylib.dll` next to the exe. Sprites and sounds are loaded from `asset/`, so the working directory must be the
    repository root (the Visual Studio default).
 
 ## Controls
@@ -36,12 +33,11 @@ player plane moves along the bottom and shoots them; the kill count and elapsed 
 
 ## Build from the command line
 
-Rebuilt on 2026-10-23 without source changes, using MSBuild from the Visual Studio 2022 Build Tools
-(MSVC 14.44) with the toolset overridden to v143; only C4244/C4018 conversion warnings were reported:
+Built with MSBuild from the Visual Studio 2022 Build Tools (MSVC 14.44, Win32); only C4244/C4018 conversion
+warnings are reported:
 
 ```
-MSBuild PlaneFight.sln -p:Configuration=Debug -p:Platform=x86 -p:PlatformToolset=v143
-copy lib\raylib.dll Debug\
+MSBuild PlaneFight.sln -p:Configuration=Debug
 Debug\PlaneFight.exe
 ```
 
