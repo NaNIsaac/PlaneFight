@@ -5,6 +5,12 @@ A small vertical-scrolling shooter written in C++ with raylib.
 Hobby project from 2023. Enemy planes and bombers fly down from the top of the screen; the
 player plane moves along the bottom and shoots them; the kill count and elapsed time are shown top-left. The game ends when an enemy reaches the player.
 
+## Screenshots
+
+![Title menu](docs/media/screenshot-1.png) ![During play](docs/media/screenshot-2.png)
+
+![Short gameplay recording](docs/media/demo.gif)
+
 ## Requirements
 
 - Windows, Visual Studio 2022 with "Desktop development with C++" (toolset v143)
