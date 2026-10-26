@@ -49,12 +49,9 @@ Debug\PlaneFight.exe
 
 Start the executable from the repository root so that `asset/` is found. The window is 960x540.
 
-## Origin
+## Author
 
-This repository is the original. Its history was also imported into
-[games-2023](https://github.com/NaNIsaac/games-2023) as `PlaneFight/` with `git subtree` (games-2023 commit
-`b2340dc`, from commit `cd604ce` here). Apart from line endings, the files there are identical to this
-repository's. Every commit was made by Isaac Yong.
+Written alone by [NaNIsaac](https://github.com/NaNIsaac) in 2023.
 
 ## License and third-party material
 
